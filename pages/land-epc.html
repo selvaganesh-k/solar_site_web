@@ -10,37 +10,285 @@
     <link rel="stylesheet" href="../style.css">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg fixed-top navbar-modern">
+    <div class="scroll-indicator" id="scrollIndicator"></div>
+    <nav class="navbar navbar-expand-lg fixed-top navbar-modern" data-aos="fade-down">
         <div class="container">
             <a class="navbar-brand navbar-brand-modern" href="../index.html#home">
-                 <img src="../assets/solarlogo-removebg-preview.png" alt="VC Green Energy">
+                <img src="../assets/solarlogo-removebg-preview.png" alt="SolarTech Pro">
             </a>
+            
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
+            
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link nav-link-modern" href="../index.html#home">Home</a></li>
-                    <li class="nav-item"><a class="nav-link nav-link-modern active" href="land-epc.html">Solar Land Based EPC</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-link-modern" href="../index.html#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-link-modern" href="./projects.html">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-link-modern" href="./power-sales.html">Power Sales</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-link-modern" href="./clients.html">Clients</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link nav-link-modern dropdown-toggle" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Services</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="./land-epc.html">Solar Land Based EPC</a></li>
+                            <li><a class="dropdown-item" href="./rooftop.html">Solar Roof Top</a></li>
+                            <li><a class="dropdown-item" href="./o-and-m.html">Operation & Maintenance</a></li>
+                            <li><a class="dropdown-item" href="./working-process.html">Our Working Process</a></li>
+                            <li><a class="dropdown-item" href="./solar-wind-power-sales.html">Solar Wind Power and Sales Purchase</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link nav-link-modern" href="./about.html">About Us</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link nav-link-modern dropdown-toggle" href="#" id="contactDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Contact Us</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="./enquiry.html">Enquiry</a></li>
+                            <li><a class="dropdown-item" href="./power-purchase-sale-enquiry.html">Power Purchase and Sale Enquiry</a></li>
+                        </ul>
+                    </li>
                 </ul>
-                <a class="btn btn-accent-modern ms-3" href="enquiry.html">Enquire Now</a>
+                <a class="btn btn-accent-modern ms-3" href="./enquiry.html">Enquire Now</a>
             </div>
         </div>
     </nav>
 
+    <section class="page-hero hero-land-epc">
+        <div class="container">
+            <div class="text-center">
+                <h1 class="section-title" data-aos="fade-up">Solar Land Based EPC</h1>
+                <p class="section-subtitle" data-aos="fade-up" data-aos-delay="200">Ground mounted, MW‑scale parks with end‑to‑end execution.</p>
+            </div>
+        </div>
+    </section>
+
     <main class="section-modern">
         <div class="container">
             <div class="text-center mb-5">
-                <h1 class="section-title">Solar Land Based EPC</h1>
-                <p class="section-subtitle">Ground mounted, MW‑scale parks with end‑to‑end execution.</p>
+                <h2 class="section-title" data-aos="fade-up">Our EPC Services</h2>
+                <p class="section-subtitle" data-aos="fade-up" data-aos-delay="200">Complete engineering, procurement, and construction solutions for large-scale solar projects.</p>
             </div>
             <div class="row g-4">
-                <div class="col-lg-4"><div class="card-modern p-4 h-100 text-center">Land Sourcing</div></div>
-                <div class="col-lg-4"><div class="card-modern p-4 h-100 text-center">Design & Engineering</div></div>
-                <div class="col-lg-4"><div class="card-modern p-4 h-100 text-center">Construction & Commissioning</div></div>
+                <div class="col-lg-4" data-aos="flip-left" data-aos-delay="200">
+                    <div class="card-modern p-4 h-100 text-center">
+                        <div class="mb-3">
+                            <i class="fas fa-map-marked-alt text-primary fs-1"></i>
+                        </div>
+                        <h5 class="mb-3">Land Sourcing</h5>
+                        <p class="text-muted">Strategic land acquisition and site evaluation for optimal solar park development.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4" data-aos="flip-left" data-aos-delay="400">
+                    <div class="card-modern p-4 h-100 text-center">
+                        <div class="mb-3">
+                            <i class="fas fa-drafting-compass text-primary fs-1"></i>
+                        </div>
+                        <h5 class="mb-3">Design & Engineering</h5>
+                        <p class="text-muted">Advanced engineering design and technical specifications for maximum efficiency.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4" data-aos="flip-left" data-aos-delay="600">
+                    <div class="card-modern p-4 h-100 text-center">
+                        <div class="mb-3">
+                            <i class="fas fa-tools text-primary fs-1"></i>
+                        </div>
+                        <h5 class="mb-3">Construction & Commissioning</h5>
+                        <p class="text-muted">Professional construction management and seamless project commissioning.</p>
+                    </div>
+                </div>
             </div>
         </div>
     </main>
+
+    <!-- Projects Slider Section -->
+    <section class="section-modern gradient-bg">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title" data-aos="fade-up">Our Recent Projects</h2>
+                <p class="section-subtitle" data-aos="fade-up" data-aos-delay="200">Explore our successful solar land-based EPC projects across India.</p>
+            </div>
+            
+            <div id="projectsCarousel" class="carousel slide" data-bs-ride="carousel" data-aos="fade-up" data-aos-delay="400">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#projectsCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#projectsCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#projectsCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row g-4">
+                            <div class="col-lg-4">
+                                <div class="card-modern h-100 p-4">
+                                    <img src="../assets/solar-park-killukudi.jpg" alt="Industrial Solar Park" class="img-fluid rounded mb-4" style="height: 200px; object-fit: cover; width: 100%;">
+                                    <h5 class="mb-3">Industrial Solar Park - 15MW</h5>
+                                    <p class="text-muted mb-3">Large-scale solar installation for manufacturing complex with advanced grid integration and energy storage systems.</p>
+                                    <div class="d-flex justify-content-between">
+                                        <small><i class="fas fa-map-marker-alt me-1"></i> Tamil Nadu</small>
+                                        <small><i class="fas fa-calendar me-1"></i> 2023</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="card-modern h-100 p-4">
+                                    <img src="../assets/solar-parks-tirutani.jpg" alt="Textile Mill Solar" class="img-fluid rounded mb-4" style="height: 200px; object-fit: cover; width: 100%;">
+                                    <h5 class="mb-3">Textile Mill Solar - 12MW</h5>
+                                    <p class="text-muted mb-3">Ground-mounted solar farm for textile manufacturing with grid-tie system and backup storage.</p>
+                                    <div class="d-flex justify-content-between">
+                                        <small><i class="fas fa-map-marker-alt me-1"></i> Gujarat</small>
+                                        <small><i class="fas fa-calendar me-1"></i> 2024</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="card-modern h-100 p-4">
+                                    <img src="../assets/thirunelveli-solar-projects.jpg" alt="Thirunelveli Solar Project" class="img-fluid rounded mb-4" style="height: 200px; object-fit: cover; width: 100%;">
+                                    <h5 class="mb-3">Thirunelveli Solar Farm - 20MW</h5>
+                                    <p class="text-muted mb-3">Large-scale ground-mounted solar installation with advanced tracking systems and grid integration.</p>
+                                    <div class="d-flex justify-content-between">
+                                        <small><i class="fas fa-map-marker-alt me-1"></i> Tamil Nadu</small>
+                                        <small><i class="fas fa-calendar me-1"></i> 2024</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="carousel-item">
+                        <div class="row g-4">
+                            <div class="col-lg-4">
+                                <div class="card-modern h-100 p-4">
+                                    <img src="../assets/coimbatore.jpg" alt="Coimbatore Solar Project" class="img-fluid rounded mb-4" style="height: 200px; object-fit: cover; width: 100%;">
+                                    <h5 class="mb-3">Coimbatore Industrial - 10MW</h5>
+                                    <p class="text-muted mb-3">Industrial rooftop solar installation with smart monitoring and energy management systems.</p>
+                                    <div class="d-flex justify-content-between">
+                                        <small><i class="fas fa-map-marker-alt me-1"></i> Tamil Nadu</small>
+                                        <small><i class="fas fa-calendar me-1"></i> 2023</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="card-modern h-100 p-4">
+                                    <img src="../assets/karur.jpg" alt="Karur Solar Project" class="img-fluid rounded mb-4" style="height: 200px; object-fit: cover; width: 100%;">
+                                    <h5 class="mb-3">Karur Textile Mill - 6MW</h5>
+                                    <p class="text-muted mb-3">Rooftop solar system for textile manufacturing unit with grid-tie and backup power systems.</p>
+                                    <div class="d-flex justify-content-between">
+                                        <small><i class="fas fa-map-marker-alt me-1"></i> Tamil Nadu</small>
+                                        <small><i class="fas fa-calendar me-1"></i> 2024</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="card-modern h-100 p-4">
+                                    <img src="../assets/solar-rooftop.jpg" alt="Commercial Complex" class="img-fluid rounded mb-4" style="height: 200px; object-fit: cover; width: 100%;">
+                                    <h5 class="mb-3">Commercial Complex - 8MW</h5>
+                                    <p class="text-muted mb-3">Rooftop solar system for shopping mall with smart monitoring and intelligent control systems.</p>
+                                    <div class="d-flex justify-content-between">
+                                        <small><i class="fas fa-map-marker-alt me-1"></i> Karnataka</small>
+                                        <small><i class="fas fa-calendar me-1"></i> 2024</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <button class="carousel-control-prev" type="button" data-bs-target="#projectsCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#projectsCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+            
+            <div class="text-center mt-4">
+                <a href="./projects.html" class="btn btn-primary-modern">
+                    <i class="fas fa-eye me-2"></i>View All Projects
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <h5 class="text-warning mb-4">
+                        <i class="fas fa-solar-panel me-2"></i>
+                        SolarTech Pro
+                    </h5>
+                    <p class="text-white-50 mb-4">Leading renewable energy solutions provider specializing in large-scale solar projects for industrial and commercial applications.</p>
+                    <div class="social-links">
+                        <a href="#" class="text-white me-3 fs-5"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="text-white me-3 fs-5"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-white me-3 fs-5"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="text-white me-3 fs-5"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                
+                <div class="col-lg-2 col-md-6">
+                    <h6 class="text-warning mb-4">Quick Links</h6>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="../index.html#home" class="text-white-50 text-decoration-none">Home</a></li>
+                        <li class="mb-2"><a href="./about.html" class="text-white-50 text-decoration-none">About</a></li>
+                        <li class="mb-2"><a href="./services.html" class="text-white-50 text-decoration-none">Services</a></li>
+                        <li class="mb-2"><a href="./projects.html" class="text-white-50 text-decoration-none">Projects</a></li>
+                        <li class="mb-2"><a href="./contact.html" class="text-white-50 text-decoration-none">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-3 col-md-6">
+                    <h6 class="text-warning mb-4">Services</h6>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="./land-epc.html" class="text-white-50 text-decoration-none">Solar Land Based EPC</a></li>
+                        <li class="mb-2"><a href="./rooftop.html" class="text-white-50 text-decoration-none">Solar Roof Top</a></li>
+                        <li class="mb-2"><a href="./o-and-m.html" class="text-white-50 text-decoration-none">O&M Services</a></li>
+                        <li class="mb-2"><a href="./working-process.html" class="text-white-50 text-decoration-none">Working Process</a></li>
+                        <li class="mb-2"><a href="./solar-wind-power-sales.html" class="text-white-50 text-decoration-none">Solar Wind Power & Sales</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-3 col-md-6">
+                    <h6 class="text-warning mb-4">Contact Info</h6>
+                    <p class="text-white-50 mb-2">
+                        <i class="fas fa-map-marker-alt me-2"></i>
+                        Tiruchirappalli, Tamil Nadu
+                    </p>
+                    <p class="text-white-50 mb-2">
+                        <i class="fas fa-phone me-2"></i>
+                        +91 98765 43210
+                    </p>
+                    <p class="text-white-50 mb-2">
+                        <i class="fas fa-envelope me-2"></i>
+                        info@solartechpro.com
+                    </p>
+                </div>
+            </div>
+            
+            <hr class="border-secondary my-4">
+            
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="text-white-50 mb-0">&copy; 2024 SolarTech Pro. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <p class="text-white-50 mb-0">Designed with renewable energy in mind.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>

@@ -294,25 +294,40 @@
 
         /* Per-page hero background overrides */
         .hero-about {
-            background-image: linear-gradient(rgba(15, 43, 82, 0.75), rgba(176, 30, 30, 0.55)), url('https://images.unsplash.com/photo-1508804185872-d7badad00f7d?q=80&w=1400&auto=format&fit=crop');
+            background-image: linear-gradient(rgba(15, 43, 82, 0.75), rgba(176, 30, 30, 0.55)), url('./assets/hero2.jpg');
         }
         .hero-blog {
-            background-image: linear-gradient(rgba(15, 43, 82, 0.75), rgba(176, 30, 30, 0.55)), url('https://images.unsplash.com/photo-1505764706515-aa95265c5abc?q=80&w=1400&auto=format&fit=crop');
+            background-image: linear-gradient(rgba(15, 43, 82, 0.75), rgba(176, 30, 30, 0.55)), url('./assets/hero3.jpg');
         }
         .hero-clients {
-            background-image: linear-gradient(rgba(15, 43, 82, 0.75), rgba(176, 30, 30, 0.55)), url('https://images.unsplash.com/photo-1554188248-986adbb73be0?q=80&w=1400&auto=format&fit=crop');
+            background-image: linear-gradient(rgba(15, 43, 82, 0.75), rgba(176, 30, 30, 0.55)), url('./assets/hero4.jpg');
         }
         .hero-contact {
-            background-image: linear-gradient(rgba(15, 43, 82, 0.75), rgba(176, 30, 30, 0.55)), url('https://images.unsplash.com/photo-1496181133206-80ce9b88a853?q=80&w=1400&auto=format&fit=crop');
+            background-image: linear-gradient(rgba(15, 43, 82, 0.75), rgba(176, 30, 30, 0.55)), url('./assets/hero5.jpg');
         }
         .hero-enquiry {
-            background-image: linear-gradient(rgba(15, 43, 82, 0.75), rgba(176, 30, 30, 0.55)), url('https://images.unsplash.com/photo-1461749280684-dccba630e2f6?q=80&w=1400&auto=format&fit=crop');
+            background-image: linear-gradient(rgba(15, 43, 82, 0.75), rgba(176, 30, 30, 0.55)), url('./assets/hero2.jpg');
         }
         .hero-power-sales {
-            background-image: linear-gradient(rgba(15, 43, 82, 0.75), rgba(176, 30, 30, 0.55)), url('https://images.unsplash.com/photo-1509391350841-a9a9d4465f56?q=80&w=1400&auto=format&fit=crop');
+            background-image: linear-gradient(rgba(15, 43, 82, 0.75), rgba(176, 30, 30, 0.55)), url('./assets/hero3.jpg');
         }
         .hero-projects {
-            background-image: linear-gradient(rgba(15, 43, 82, 0.75), rgba(176, 30, 30, 0.55)), url('https://images.unsplash.com/photo-1461301214746-1e109215d6d3?q=80&w=1400&auto=format&fit=crop');
+            background-image: linear-gradient(rgba(15, 43, 82, 0.75), rgba(176, 30, 30, 0.55)), url('./assets/hero4.jpg');
+        }
+        .hero-land-epc {
+            background-image: linear-gradient(rgba(15, 43, 82, 0.75), rgba(176, 30, 30, 0.55)), url('./assets/hero5.jpg');
+        }
+        .hero-rooftop {
+            background-image: linear-gradient(rgba(15, 43, 82, 0.75), rgba(176, 30, 30, 0.55)), url('./assets/hero1.jpg');
+        }
+        .hero-o-and-m {
+            background-image: linear-gradient(rgba(15, 43, 82, 0.75), rgba(176, 30, 30, 0.55)), url('./assets/hero2.jpg');
+        }
+        .hero-working-process {
+            background-image: linear-gradient(rgba(15, 43, 82, 0.75), rgba(176, 30, 30, 0.55)), url('./assets/hero3.jpg');
+        }
+        .hero-solar-wind {
+            background-image: linear-gradient(rgba(15, 43, 82, 0.75), rgba(176, 30, 30, 0.55)), url('./assets/hero4.jpg');
         }
 
         .hero-modern::before {

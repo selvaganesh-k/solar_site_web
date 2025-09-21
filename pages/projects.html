@@ -73,46 +73,262 @@
         </div>
     </section>
 
+    <!-- Tabs Section -->
     <section class="section-modern gradient-bg">
         <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <ul class="nav nav-pills justify-content-center mb-5" id="projectsTabs" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="projects-tab" data-bs-toggle="pill" data-bs-target="#projects" type="button" role="tab" aria-controls="projects" aria-selected="true">
+                                <i class="fas fa-solar-panel me-2"></i>Projects
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="videos-tab" data-bs-toggle="pill" data-bs-target="#videos" type="button" role="tab" aria-controls="videos" aria-selected="false">
+                                <i class="fas fa-play-circle me-2"></i>Videos
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="gallery-tab" data-bs-toggle="pill" data-bs-target="#gallery" type="button" role="tab" aria-controls="gallery" aria-selected="false">
+                                <i class="fas fa-images me-2"></i>Gallery
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
             
-            <div class="row g-4">
-                <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
-                    <div class="card-glass h-100 p-4">
-                        <div class="project-image-placeholder bg-primary rounded-3 mb-4" style="height: 200px; display: flex; align-items: center; justify-content: center;">
-                            <i class="fas fa-solar-panel fa-4x text-white"></i>
+            <div class="tab-content" id="projectsTabsContent">
+                <!-- Projects Tab -->
+                <div class="tab-pane fade show active" id="projects" role="tabpanel" aria-labelledby="projects-tab">
+                    <div class="row g-4">
+                        <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                            <div class="card-glass h-100 p-4">
+                                <img src="../assets/solar-park-killukudi.jpg" alt="Industrial Solar Park" class="img-fluid rounded-3 mb-4" style="height: 200px; object-fit: cover; width: 100%;">
+                                <h5 class="text-dark mb-3">Industrial Solar Park - 15MW</h5>
+                                <p class="text-dark mb-3">Large-scale solar installation for manufacturing complex with advanced grid integration and energy storage systems.</p>
+                                <div class="d-flex justify-content-between text-dark">
+                                    <small><i class="fas fa-map-marker-alt me-1"></i> Tamil Nadu</small>
+                                    <small><i class="fas fa-calendar me-1"></i> 2023</small>
+                                </div>
+                            </div>
                         </div>
-                        <h5 class="text-white mb-3">Industrial Solar Park - 15MW</h5>
-                        <p class="text-white-50 mb-3">Large-scale solar installation for manufacturing complex with advanced grid integration and energy storage systems.</p>
-                        <div class="d-flex justify-content-between text-white-50">
-                            <small><i class="fas fa-map-marker-alt me-1"></i> Tamil Nadu</small>
-                            <small><i class="fas fa-calendar me-1"></i> 2023</small>
+                        <div class="col-lg-4" data-aos="fade-up" data-aos-delay="400">
+                            <div class="card-glass h-100 p-4">
+                                <img src="../assets/solar-rooftop.jpg" alt="Commercial Complex" class="img-fluid rounded-3 mb-4" style="height: 200px; object-fit: cover; width: 100%;">
+                                <h5 class="text-dark mb-3">Commercial Complex - 8MW</h5>
+                                <p class="text-dark mb-3">Rooftop solar system for shopping mall with smart monitoring and intelligent control systems.</p>
+                                <div class="d-flex justify-content-between text-dark">
+                                    <small><i class="fas fa-map-marker-alt me-1"></i> Karnataka</small>
+                                    <small><i class="fas fa-calendar me-1"></i> 2024</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4" data-aos="fade-up" data-aos-delay="600">
+                            <div class="card-glass h-100 p-4">
+                                <img src="../assets/solar-parks-tirutani.jpg" alt="Textile Mill Solar" class="img-fluid rounded-3 mb-4" style="height: 200px; object-fit: cover; width: 100%;">
+                                <h5 class="text-dark mb-3">Textile Mill Solar - 12MW</h5>
+                                <p class="text-dark mb-3">Ground-mounted solar farm for textile manufacturing with grid-tie system and backup storage.</p>
+                                <div class="d-flex justify-content-between text-dark">
+                                    <small><i class="fas fa-map-marker-alt me-1"></i> Gujarat</small>
+                                    <small><i class="fas fa-calendar me-1"></i> 2024</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                            <div class="card-glass h-100 p-4">
+                                <img src="../assets/thirunelveli-solar-projects.jpg" alt="Thirunelveli Solar Project" class="img-fluid rounded-3 mb-4" style="height: 200px; object-fit: cover; width: 100%;">
+                                <h5 class="text-dark mb-3">Thirunelveli Solar Farm - 20MW</h5>
+                                <p class="text-dark mb-3">Large-scale ground-mounted solar installation with advanced tracking systems and grid integration.</p>
+                                <div class="d-flex justify-content-between text-dark">
+                                    <small><i class="fas fa-map-marker-alt me-1"></i> Tamil Nadu</small>
+                                    <small><i class="fas fa-calendar me-1"></i> 2024</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4" data-aos="fade-up" data-aos-delay="400">
+                            <div class="card-glass h-100 p-4">
+                                <img src="../assets/coimbatore.jpg" alt="Coimbatore Solar Project" class="img-fluid rounded-3 mb-4" style="height: 200px; object-fit: cover; width: 100%;">
+                                <h5 class="text-dark mb-3">Coimbatore Industrial - 10MW</h5>
+                                <p class="text-dark mb-3">Industrial rooftop solar installation with smart monitoring and energy management systems.</p>
+                                <div class="d-flex justify-content-between text-dark">
+                                    <small><i class="fas fa-map-marker-alt me-1"></i> Tamil Nadu</small>
+                                    <small><i class="fas fa-calendar me-1"></i> 2023</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4" data-aos="fade-up" data-aos-delay="600">
+                            <div class="card-glass h-100 p-4">
+                                <img src="../assets/karur.jpg" alt="Karur Solar Project" class="img-fluid rounded-3 mb-4" style="height: 200px; object-fit: cover; width: 100%;">
+                                <h5 class="text-dark mb-3">Karur Textile Mill - 6MW</h5>
+                                <p class="text-dark mb-3">Rooftop solar system for textile manufacturing unit with grid-tie and backup power systems.</p>
+                                <div class="d-flex justify-content-between text-dark">
+                                    <small><i class="fas fa-map-marker-alt me-1"></i> Tamil Nadu</small>
+                                    <small><i class="fas fa-calendar me-1"></i> 2024</small>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4" data-aos="fade-up" data-aos-delay="400">
-                    <div class="card-glass h-100 p-4">
-                        <div class="project-image-placeholder bg-danger rounded-3 mb-4" style="height: 200px; display: flex; align-items: center; justify-content: center;">
-                            <i class="fas fa-building fa-4x text-white"></i>
+                
+                <!-- Videos Tab -->
+                <div class="tab-pane fade" id="videos" role="tabpanel" aria-labelledby="videos-tab">
+                    <div class="row g-4">
+                        <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                            <div class="card-glass h-100 p-4">
+                                <div class="video-placeholder bg-dark rounded-3 mb-4" style="height: 200px; display: flex; align-items: center; justify-content: center; position: relative;">
+                                    <i class="fas fa-play-circle fa-4x text-primary"></i>
+                                    <div class="position-absolute top-50 start-50 translate-middle">
+                                        <span class="badge bg-primary">Project Video</span>
+                                    </div>
+                                </div>
+                                <h5 class="text-dark mb-3">Solar Park Installation Process</h5>
+                                <p class="text-dark mb-3">Watch our team in action installing a large-scale solar park with advanced equipment and techniques.</p>
+                                <div class="d-flex justify-content-between text-dark">
+                                    <small><i class="fas fa-clock me-1"></i> 5:30 min</small>
+                                    <small><i class="fas fa-calendar me-1"></i> 2024</small>
+                                </div>
+                            </div>
                         </div>
-                        <h5 class="text-white mb-3">Commercial Complex - 8MW</h5>
-                        <p class="text-white-50 mb-3">Rooftop solar system for shopping mall with smart monitoring and intelligent control systems.</p>
-                        <div class="d-flex justify-content-between text-white-50">
-                            <small><i class="fas fa-map-marker-alt me-1"></i> Karnataka</small>
-                            <small><i class="fas fa-calendar me-1"></i> 2024</small>
+                        <div class="col-lg-4" data-aos="fade-up" data-aos-delay="400">
+                            <div class="card-glass h-100 p-4">
+                                <div class="video-placeholder bg-dark rounded-3 mb-4" style="height: 200px; display: flex; align-items: center; justify-content: center; position: relative;">
+                                    <i class="fas fa-play-circle fa-4x text-primary"></i>
+                                    <div class="position-absolute top-50 start-50 translate-middle">
+                                        <span class="badge bg-success">Technical Video</span>
+                                    </div>
+                                </div>
+                                <h5 class="text-dark mb-3">Rooftop Solar Installation</h5>
+                                <p class="text-dark mb-3">Step-by-step guide showing our rooftop solar installation process for commercial buildings.</p>
+                                <div class="d-flex justify-content-between text-dark">
+                                    <small><i class="fas fa-clock me-1"></i> 8:15 min</small>
+                                    <small><i class="fas fa-calendar me-1"></i> 2024</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4" data-aos="fade-up" data-aos-delay="600">
+                            <div class="card-glass h-100 p-4">
+                                <div class="video-placeholder bg-dark rounded-3 mb-4" style="height: 200px; display: flex; align-items: center; justify-content: center; position: relative;">
+                                    <i class="fas fa-play-circle fa-4x text-primary"></i>
+                                    <div class="position-absolute top-50 start-50 translate-middle">
+                                        <span class="badge bg-warning">Company Overview</span>
+                                    </div>
+                                </div>
+                                <h5 class="text-dark mb-3">SolarTech Pro Company Overview</h5>
+                                <p class="text-dark mb-3">Learn about our company, mission, and the innovative solar solutions we provide to our clients.</p>
+                                <div class="d-flex justify-content-between text-dark">
+                                    <small><i class="fas fa-clock me-1"></i> 3:45 min</small>
+                                    <small><i class="fas fa-calendar me-1"></i> 2024</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                            <div class="card-glass h-100 p-4">
+                                <div class="video-placeholder bg-dark rounded-3 mb-4" style="height: 200px; display: flex; align-items: center; justify-content: center; position: relative;">
+                                    <i class="fas fa-play-circle fa-4x text-primary"></i>
+                                    <div class="position-absolute top-50 start-50 translate-middle">
+                                        <span class="badge bg-info">Maintenance</span>
+                                    </div>
+                                </div>
+                                <h5 class="text-dark mb-3">Solar System Maintenance</h5>
+                                <p class="text-dark mb-3">Our maintenance team explains the importance of regular solar system maintenance and best practices.</p>
+                                <div class="d-flex justify-content-between text-dark">
+                                    <small><i class="fas fa-clock me-1"></i> 6:20 min</small>
+                                    <small><i class="fas fa-calendar me-1"></i> 2024</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4" data-aos="fade-up" data-aos-delay="400">
+                            <div class="card-glass h-100 p-4">
+                                <div class="video-placeholder bg-dark rounded-3 mb-4" style="height: 200px; display: flex; align-items: center; justify-content: center; position: relative;">
+                                    <i class="fas fa-play-circle fa-4x text-primary"></i>
+                                    <div class="position-absolute top-50 start-50 translate-middle">
+                                        <span class="badge bg-danger">Client Testimonial</span>
+                                    </div>
+                                </div>
+                                <h5 class="text-dark mb-3">Client Success Stories</h5>
+                                <p class="text-dark mb-3">Hear from our satisfied clients about their experience with SolarTech Pro solar solutions.</p>
+                                <div class="d-flex justify-content-between text-dark">
+                                    <small><i class="fas fa-clock me-1"></i> 4:10 min</small>
+                                    <small><i class="fas fa-calendar me-1"></i> 2024</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4" data-aos="fade-up" data-aos-delay="600">
+                            <div class="card-glass h-100 p-4">
+                                <div class="video-placeholder bg-dark rounded-3 mb-4" style="height: 200px; display: flex; align-items: center; justify-content: center; position: relative;">
+                                    <i class="fas fa-play-circle fa-4x text-primary"></i>
+                                    <div class="position-absolute top-50 start-50 translate-middle">
+                                        <span class="badge bg-secondary">Technology</span>
+                                    </div>
+                                </div>
+                                <h5 class="text-dark mb-3">Advanced Solar Technology</h5>
+                                <p class="text-dark mb-3">Explore the latest solar panel technologies and innovations we use in our projects.</p>
+                                <div class="d-flex justify-content-between text-dark">
+                                    <small><i class="fas fa-clock me-1"></i> 7:30 min</small>
+                                    <small><i class="fas fa-calendar me-1"></i> 2024</small>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4" data-aos="fade-up" data-aos-delay="600">
-                    <div class="card-glass h-100 p-4">
-                        <div class="project-image-placeholder bg-success rounded-3 mb-4" style="height: 200px; display: flex; align-items: center; justify-content: center;">
-                            <i class="fas fa-industry fa-4x text-white"></i>
+                
+                <!-- Gallery Tab -->
+                <div class="tab-pane fade" id="gallery" role="tabpanel" aria-labelledby="gallery-tab">
+                    <div class="row g-4">
+                        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                            <div class="gallery-item">
+                                <img src="../assets/solar-park-killukudi.jpg" alt="Solar Park Killukudi" class="img-fluid rounded-3 mb-3" style="height: 250px; object-fit: cover; width: 100%;">
+                                <h6 class="text-dark">Solar Park - Killukudi</h6>
+                            </div>
                         </div>
-                        <h5 class="text-white mb-3">Textile Mill Solar - 12MW</h5>
-                        <p class="text-white-50 mb-3">Ground-mounted solar farm for textile manufacturing with grid-tie system and backup storage.</p>
-                        <div class="d-flex justify-content-between text-white-50">
-                            <small><i class="fas fa-map-marker-alt me-1"></i> Gujarat</small>
-                            <small><i class="fas fa-calendar me-1"></i> 2024</small>
+                        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+                            <div class="gallery-item">
+                                <img src="../assets/solar-parks-tirutani.jpg" alt="Solar Parks Tirutani" class="img-fluid rounded-3 mb-3" style="height: 250px; object-fit: cover; width: 100%;">
+                                <h6 class="text-dark">Solar Parks - Tirutani</h6>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
+                            <div class="gallery-item">
+                                <img src="../assets/thirunelveli-solar-projects.jpg" alt="Thirunelveli Solar Projects" class="img-fluid rounded-3 mb-3" style="height: 250px; object-fit: cover; width: 100%;">
+                                <h6 class="text-dark">Thirunelveli Solar Projects</h6>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                            <div class="gallery-item">
+                                <img src="../assets/coimbatore.jpg" alt="Coimbatore Solar" class="img-fluid rounded-3 mb-3" style="height: 250px; object-fit: cover; width: 100%;">
+                                <h6 class="text-dark">Coimbatore Solar Installation</h6>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+                            <div class="gallery-item">
+                                <img src="../assets/karur.jpg" alt="Karur Solar" class="img-fluid rounded-3 mb-3" style="height: 250px; object-fit: cover; width: 100%;">
+                                <h6 class="text-dark">Karur Solar Project</h6>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
+                            <div class="gallery-item">
+                                <img src="../assets/solar-rooftop.jpg" alt="Solar Rooftop" class="img-fluid rounded-3 mb-3" style="height: 250px; object-fit: cover; width: 100%;">
+                                <h6 class="text-dark">Rooftop Solar Installation</h6>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                            <div class="gallery-item">
+                                <img src="../assets/solar-land-based-epc.jpg" alt="Solar Land Based EPC" class="img-fluid rounded-3 mb-3" style="height: 250px; object-fit: cover; width: 100%;">
+                                <h6 class="text-dark">Land-Based Solar EPC</h6>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+                            <div class="gallery-item">
+                                <img src="../assets/solar-operation-and-maintenance.jpg" alt="Solar Operation and Maintenance" class="img-fluid rounded-3 mb-3" style="height: 250px; object-fit: cover; width: 100%;">
+                                <h6 class="text-dark">Operation & Maintenance</h6>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
+                            <div class="gallery-item">
+                                <img src="../assets/our-working-process.jpg" alt="Our Working Process" class="img-fluid rounded-3 mb-3" style="height: 250px; object-fit: cover; width: 100%;">
+                                <h6 class="text-dark">Our Working Process</h6>
+                            </div>
                         </div>
                     </div>
                 </div>
