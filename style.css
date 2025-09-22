@@ -408,6 +408,85 @@
             background-color: rgba(224, 40, 40, 0.1);
         }
 
+        /* Modern animated hamburger (applies to all Bootstrap navbars) */
+        .navbar-toggler {
+            border: none;
+            padding: 0.5rem;
+            border-radius: var(--radius-full);
+            box-shadow: none !important;
+            transition: transform var(--duration-normal) var(--ease-out), background var(--duration-normal) var(--ease-out);
+        }
+
+        .navbar-toggler:focus {
+            outline: none;
+            box-shadow: 0 0 0 3px rgba(224, 40, 40, 0.25) !important;
+        }
+
+        .navbar-toggler:hover {
+            transform: scale(1.05);
+            background-color: rgba(224, 40, 40, 0.06);
+        }
+
+        /* Base bars */
+        .navbar-toggler .navbar-toggler-icon {
+            width: 26px;
+            height: 2px;
+            background-color: var(--primary-800);
+            position: relative;
+            display: inline-block;
+            border-radius: 2px;
+            transition: background-color var(--duration-normal) var(--ease-out), transform var(--duration-normal) var(--ease-in-out);
+            background-image: none !important; /* override Bootstrap default */
+        }
+
+        .navbar-modern.scrolled .navbar-toggler .navbar-toggler-icon {
+            background-color: #fff;
+        }
+
+        .navbar-toggler .navbar-toggler-icon::before,
+        .navbar-toggler .navbar-toggler-icon::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background-color: inherit;
+            border-radius: 2px;
+            transition: top var(--duration-normal) var(--ease-in-out), transform var(--duration-normal) var(--ease-in-out), background-color var(--duration-normal) var(--ease-out);
+        }
+
+        .navbar-toggler .navbar-toggler-icon::before { top: -8px; }
+        .navbar-toggler .navbar-toggler-icon::after { top: 8px; }
+
+        /* Hover color accent */
+        .navbar-toggler:hover .navbar-toggler-icon,
+        .navbar-toggler:hover .navbar-toggler-icon::before,
+        .navbar-toggler:hover .navbar-toggler-icon::after {
+            background-color: var(--accent-800);
+        }
+
+        /* Open (aria-expanded=true) → morph to X */
+        .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
+            background-color: transparent;
+        }
+
+        .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon::before {
+            top: 0;
+            transform: rotate(45deg);
+        }
+
+        .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon::after {
+            top: 0;
+            transform: rotate(-45deg);
+        }
+
+        /* Ensure visibility on dark backgrounds when scrolled */
+        .navbar-modern.scrolled .navbar-toggler:hover .navbar-toggler-icon,
+        .navbar-modern.scrolled .navbar-toggler:hover .navbar-toggler-icon::before,
+        .navbar-modern.scrolled .navbar-toggler:hover .navbar-toggler-icon::after {
+            background-color: #fff;
+        }
+
         /* ========================================
            SECTIONS & LAYOUTS
         ======================================== */
@@ -427,12 +506,18 @@
             content: '';
             position: absolute;
             bottom: -1rem;
-            left: 50%;
-            transform: translateX(-50%);
+            left: 0;
+            transform: none;
             width: 100px;
             height: 4px;
             background: var(--gradient-accent);
             border-radius: var(--radius-full);
+        }
+
+        /* Center the underline only when the heading is inside a centered container */
+        .text-center .section-title::after {
+            left: 50%;
+            transform: translateX(-50%);
         }
 
         .section-subtitle {
@@ -463,6 +548,7 @@
             box-shadow: var(--shadow-glass);
             color: #fff;
             height: 300px;
+            margin-top: var(--space-16);
           }
           
         /* ========================================
@@ -549,7 +635,7 @@
         ======================================== */
         @media (max-width: 1024px) {
             .hero-modern { 
-                margin-top: 110px !important;
+                margin-top: 80px !important;
                 padding-top: 50px !important;
             }
         }
@@ -561,6 +647,17 @@
             .section-title { font-size: 2rem; }
             .hero-modern { min-height: 80vh; }
             .section-modern { padding: var(--space-16) 0; }
+        }
+
+        /* Prevent mobile horizontal overflow caused by wide navbar brand */
+        @media (max-width: 576px) {
+            .navbar-brand-modern {
+                width: 140px !important;
+                height: 70px !important;
+            }
+            .navbar .container {
+                overflow-x: hidden;
+            }
         }
 
         /* ========================================
@@ -628,4 +725,39 @@
             background: var(--gradient-accent);
             z-index: 9999;
             transition: width 0.1s ease-out;
+        }
+
+        /* ========================================
+           WHATSAPP FLOAT BUTTON (NO ANIMATION)
+        ======================================== */
+        /* Ensure WhatsApp CTA stays fixed and does not animate */
+        /* Fix the wrapper too, in case page-level transforms affect children */
+        .position-fixed.bottom-0.end-0.m-4 {
+            position: fixed !important;
+            bottom: 1rem !important;
+            right: 1rem !important;
+            z-index: 2000 !important;
+        }
+
+        .position-fixed a[href^="https://wa.me/"] {
+            animation: none !important;
+            transition: none !important;
+            transform: none !important;
+            position: fixed !important;
+            bottom: 1rem !important;
+            right: 1rem !important;
+            z-index: 2000 !important;
+        }
+
+        .position-fixed a[href^="https://wa.me/"]:hover,
+        .position-fixed a[href^="https://wa.me/"]:focus,
+        .position-fixed a[href^="https://wa.me/"]:active {
+            transform: none !important;
+        }
+
+        /* Also disable any icon animation/transition inside the WhatsApp button */
+        .position-fixed a[href^="https://wa.me/"] i {
+            animation: none !important;
+            transition: none !important;
+            transform: none !important;
         }
