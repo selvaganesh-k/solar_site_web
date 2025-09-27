@@ -727,37 +727,57 @@
             transition: width 0.1s ease-out;
         }
 
-        /* ========================================
-           WHATSAPP FLOAT BUTTON (NO ANIMATION)
-        ======================================== */
-        /* Ensure WhatsApp CTA stays fixed and does not animate */
-        /* Fix the wrapper too, in case page-level transforms affect children */
-        .position-fixed.bottom-0.end-0.m-4 {
-            position: fixed !important;
-            bottom: 1rem !important;
-            right: 1rem !important;
-            z-index: 2000 !important;
+        /* Founder & CEO Section Styles */
+        .founder-card {
+            transition: all 0.3s ease;
+            border-radius: 15px;
+            overflow: hidden;
         }
 
-        .position-fixed a[href^="https://wa.me/"] {
-            animation: none !important;
-            transition: none !important;
-            transform: none !important;
-            position: fixed !important;
-            bottom: 1rem !important;
-            right: 1rem !important;
-            z-index: 2000 !important;
+        .founder-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15) !important;
         }
 
-        .position-fixed a[href^="https://wa.me/"]:hover,
-        .position-fixed a[href^="https://wa.me/"]:focus,
-        .position-fixed a[href^="https://wa.me/"]:active {
-            transform: none !important;
+        .founder-image img {
+            transition: all 0.3s ease;
+            border: 4px solid #fff;
         }
 
-        /* Also disable any icon animation/transition inside the WhatsApp button */
-        .position-fixed a[href^="https://wa.me/"] i {
-            animation: none !important;
-            transition: none !important;
-            transform: none !important;
+        .founder-card:hover .founder-image img {
+            transform: scale(1.05);
+        }
+
+        .founder-achievements .badge {
+            font-size: 0.75rem;
+            padding: 0.5rem 0.75rem;
+            border-radius: 20px;
+            font-weight: 500;
+        }
+
+        .founder-card .card-title {
+            font-weight: 600;
+            font-size: 1.5rem;
+        }
+
+        .founder-card h6 {
+            font-weight: 500;
+            font-size: 1.1rem;
+        }
+
+        .founder-card .card-text {
+            line-height: 1.6;
+            font-size: 0.95rem;
+        }
+
+        /* Responsive adjustments for founder section */
+        @media (max-width: 768px) {
+            .founder-card {
+                margin-bottom: 2rem;
+            }
+            
+            .founder-image img {
+                width: 120px !important;
+                height: 120px !important;
+            }
         }
